@@ -15,7 +15,14 @@ def morser(string):
 			code += " "
 		
 		else:
-			code += morseAlphabet[letter]
+			try:
+				code += morseAlphabet[letter]
+			except KeyError as e:
+				print("Error! The character: '" + letter +
+						"' is not defined in the provided dictionary.")
+				print("Exiting program!")
+				exit()
+			
 
 	return code
 
