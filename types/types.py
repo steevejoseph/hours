@@ -1,7 +1,8 @@
 #!usr/bin/env python3
 
 """
-Simple python program that encodes a plaintext messafge to morse code
+Simple python program that demonstrates the
+'type' and 'literal_eval' functions. 
 """
 
 from ast import literal_eval
